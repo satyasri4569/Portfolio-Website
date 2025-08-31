@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sai Annapurna — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1724;--card:#0b1220;--accent:#6ee7b7;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}*{box-sizing:border-box}html,body{height:100%}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#e6eef8;background:linear-gradient(180deg,#071027 0%,var(--bg) 100%);-webkit-font-smoothing:antialiased}
+.container{max-width:1100px;margin:36px auto;padding:28px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:64px;height:64px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),#60a5fa);font-weight:800;color:#07203a}
+.name{font-size:20px;font-weight:700}
+.role{color:var(--muted);font-size:13px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+.grid{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03);padding:22px;border-radius:14px}
+.hero h1{margin:0;font-size:28px}
+.hero p{color:var(--muted);margin-top:8px;line-height:1.5}
+.cta{display:flex;gap:12px;margin-top:18px}
+.btn{padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#60a5fa);color:#032027}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+.section{margin-top:18px}
+.section h3{margin:0 0 12px 0}
+.list{display:flex;flex-direction:column;gap:10px}
+.skill{display:flex;align-items:center;justify-content:space-between}
+.progress{height:8px;border-radius:8px;background:rgba(255,255,255,0.03);overflow:hidden;width:60%;margin-left:12px}
+.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#60a5fa)}
+.projects{display:grid;grid-template-columns:1fr;gap:12px}
+.project{padding:12px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02)}
+.project h4{margin:0}
+.meta{color:var(--muted);font-size:13px;margin-top:8px}
+.certifications{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.certifications img{width:100%;border-radius:12px;border:1px solid rgba(255,255,255,0.08)}
+.certifications p{color:var(--muted);font-size:14px;margin-top:6px}
+.sidebar .contact-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+@media (max-width:900px){.grid{grid-template-columns:1fr}.sidebar{order:2}.header{flex-direction:column;align-items:flex-start}.nav{margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<div class="brand">
+<div class="logo">SA</div>
+<div>
+<div class="name">PATAPATI SATYA SRI SAI ANNAPURNA</div>
+<div class="role">AI &amp; ML Engineer</div>
+</div>
+</div>
+<nav class="nav">
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main class="grid">
+<section>
+<div class="card hero">
+<img src="portfolio image.jpg" alt="Portfolio Photo" style="width:140px;height:140px;border-radius:50%;margin-bottom:14px;object-fit:cover;">
+<h1>AI &amp; ML enthusiast building useful ML products</h1>
+<p>I'm a B.Tech graduate in Artificial Intelligence &amp; Machine Learning passionate about NLP, computer vision, and deploying ML solutions to production. I build models, create data pipelines, and deploy services that help users.</p>
+<div class="cta">
+<button class="btn btn-primary" onclick="scrollToSection('contact')">Hire Me</button>
+</div>
+</div>
+<div class="card section" id="about">
+<h3>About</h3>
+<p style="color:var(--muted);line-height:1.6">A passionate and driven AI &amp; ML enthusiast with hands-on experience in NLP and computer vision. Experience includes fine-tuning transformer models, building image classification pipelines, and deploying models using cloud tools.</p>
+<div class="section">
+<h3>Skills</h3>
+<div class="list">
+<div class="skill"><div>Python</div></div>
+<div class="skill"><div>Machine Learning</div></div>
+<div class="skill"><div>Deep Learning</div></div>
+<div class="skill"><div>HTML &amp; CSS</div></div>
+</div>
+</div>
+</div>
+<div class="card section" id="projects">
+<h3>Projects</h3>
+<div class="projects">
+<div class="project">
+<h4>Virtual Health Assistant</h4>
+<div class="meta">AI-powered assistant for patient communication and scheduling. NLP pipelines, intent detection, and response generation.</div>
+</div>
+<div class="project">
+<h4>Image Classification Models</h4>
+<div class="meta">Built and trained CNNs on annotated datasets; used Roboflow for dataset management and augmentation.</div>
+</div>
+<div class="project">
+<h4>NLP Model Fine-Tuning</h4>
+<div class="meta">Fine-tuned BERT and other transformers for sentiment analysis, question answering, and summarization tasks.</div>
+</div>
+</div>
+</div>
+<div class="card section" id="experience">
+<h3>Experience</h3>
+<div class="list">
+<div>
+<div style="font-weight:700">Machine Learning Intern — May 2023 – June 2023</div>
+<div class="meta">Developed and deployed NLP models; fine-tuned transformers; worked on data preprocessing and model evaluation.</div>
+</div>
+<div style="margin-top:10px">
+<div style="font-weight:700">Virtual Health Assistant — Nov 2024 – Mar 2025</div>
+<div class="meta">Led development of an AI virtual assistant for healthcare with real-time NLP and appointment scheduling.</div>
+</div>
+</div>
+</div>
+<div class="card section" id="certifications">
+<h3>Certifications</h3>
+<div class="certifications">
+<div><img src="HACKTHON.jpg" alt="Certificate 1"><p>Bootcamp & Hackathon on Data Science using Python (2023)</p></div>
+<div><img src="AI MODEL .jpg" alt="Certificate 2"><p>AI Model Development Contest — AIMER Society (2024)</p></div>
+<div><img src="COGNIZANT.jpg" alt="Certificate 3"><p>Artificial Intelligence Job Simulation — Cognizant Forage (2024)</p></div>
+<div><img src="APSCHE.jpg" alt="Certificate 4"><p>Short-Term Internship on Artificial Intelligence — APSCHE & AIMER Society (2024)</p></div>
+<div><img src="DATA VALLEY .jpg" alt="Certificate 5"><p>Long-Term Internship on Java Full Stack Development — Datavalley (2025)</p></div>
+<div><img src="IEEE.jpg" alt="Certificate 6"><p>Workshop on Neural Networks & Deep Learning — IEEE & SASI (2024)</p></div>
+</div>
+</div>
+</section>
+<aside class="sidebar">
+<div class="card">
+<h3>Contact</h3>
+<div class="contact-row"><strong>Email:</strong><a href="mailto:saiannapurna0718@gmail.com">saiannapurna0718@gmail.com</a></div>
+<div class="contact-row"><strong>Phone:</strong><a href="tel:+917671045596">+91 76710 45596</a></div>
+<div class="contact-row"><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/sai-annapurna/">LinkedIn Profile</a></div>
+<div class="section">
+<h3>Education</h3>
+<div style="font-weight:700">B.Tech — AI &amp; ML (2021–2025)</div>
+<div class="meta">CGPA: 7.9/10</div>
+</div>
+</div>
+</aside>
+</main>
+<footer class="container footer">Made with care • Available for internships &amp; early-career roles</footer>
+</div>
+<script>
+function scrollToSection(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+</script>
+</body>
+</html>
